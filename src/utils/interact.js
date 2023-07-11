@@ -16,6 +16,7 @@ export const mintNFT = async (url, name, description) => {
      status: "❗Please make sure all fields are completed before minting.",
     }
   }
+  
   //make metadata
   const metadata = new Object();
   metadata.name = name;
