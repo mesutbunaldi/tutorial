@@ -15,7 +15,7 @@ const Minter = (props) => {
       window.ethereum.on("accountsChanged", (accounts) => {
         if (accounts.length > 0) {
           setWallet(accounts[0]);
-          setStatus("👆🏽 Write a message in the text-field above.");
+          setStatus("Write a message in the text-field above.");
         } else {
           setWallet("");
           setStatus("🦊 Connect to Metamask using the top right button.");
@@ -67,27 +67,27 @@ const Minter = (props) => {
       </button>
 
       <br></br>
-      <h1 id="title">🧙‍♂️ Alchemy NFT Minter</h1>
+      <h1 id="title">Softtech NFT Minter</h1>
       <p>
-        Simply add your asset's link, name, and description, then press "Mint."
+        Add your asset's link, name, and description, then press "Mint."
       </p>
       <form>
-        <h2>🖼 Link to asset: </h2>
+        <h2>Link to asset: </h2>
         <input
           type="text"
-          placeholder="e.g. https://gateway.pinata.cloud/ipfs/<hash>"
+          placeholder="https://softtech.com/logo.png"
           onChange={(event) => setURL(event.target.value)}
         />
-        <h2>🤔 Name: </h2>
+        <h2>Name: </h2>
         <input
           type="text"
-          placeholder="e.g. My first NFT!"
+          placeholder="My first NFT!"
           onChange={(event) => setName(event.target.value)}
         />
-        <h2>✍️ Description: </h2>
+        <h2>Description: </h2>
         <input
           type="text"
-          placeholder="e.g. Even cooler than cryptokitties ;)"
+          placeholder="Text Description of NFT "
           onChange={(event) => setDescription(event.target.value)}
         />
       </form>
